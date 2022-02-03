@@ -18,7 +18,7 @@ stages
             }
     }
 
-    stage ('package the source code')
+    stage ('ansible')
      {
        steps{
             ansiblePlaybook become: true, credentialsId: 'ansible', installation: 'ANSIBLE', inventory: '/etc/ansible', playbook: '/opt/playbooks'
