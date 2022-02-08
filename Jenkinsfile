@@ -13,7 +13,7 @@ stages
     {
       steps{
             withMaven(globalMavenSettingsConfig: 'null', jdk: 'JAVA', maven: 'MAVEN', mavenSettingsConfig: 'null') {
-            sh 'package'
+            sh 'mvn package'
               }
             }
     }
