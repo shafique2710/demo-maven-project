@@ -16,7 +16,7 @@ stages
       }
       stage (' build docker image')
       {
-            steps{ sh 'docker build -t sha2710/mytomcat:01 .'}
+            steps{ sh 'sudo docker build -t sha2710/mytomcat:01 .'}
       }
 }
 }
