@@ -9,7 +9,7 @@ stages
        }
       stage ('build and package the src code')
       {
-            steps{ withMaven(globalMavenSettingsConfig: 'null', jdk: 'JAVA', maven: 'MAVEN', mavenSettingsConfig: 'null') {
+            steps{ withMaven(jdk: 'JAVA', maven: 'MAVEN') {
               sh 'mvn package'
             }
                  }
